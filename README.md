@@ -16,6 +16,11 @@ implantada em quatro etapas na mesma topologia:
 | B1 | Zero Trust | Servidores em enclave atrás do firewall da matriz; bloqueio padrão; portal cativo com RADIUS; ACLs; DAI e port security; gerência por SSH com AAA |
 | B2 | Zero Trust com criptografia | B1 mais túneis IPsec (IKEv2) em estrela entre os firewalls |
 
+![Topologia da etapa B1 no GNS3: matriz com enclave de servidores atrás do FW-HQ, duas filiais e o provedor da WAN](gns3/etapa-B1/topologia.png)
+
+*Topologia da etapa B1 (Zero Trust) no GNS3, com os endereços e os controles de cada equipamento. As outras etapas
+usam a mesma topologia; muda a configuração (na B2, há ainda três PCs com navegador, desligados nas medições).*
+
 Este repositório tem **os scripts** que montaram as etapas, executaram os ensaios e analisaram os resultados,
 **os dados** obtidos e **os projetos do GNS3** de cada etapa: a topologia e as configurações dos equipamentos aqui,
 e os projetos portáteis completos como anexos da release. Não inclui as imagens dos equipamentos.
