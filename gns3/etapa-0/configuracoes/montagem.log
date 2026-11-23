@@ -1,0 +1,37 @@
+11:11:44 21 nós criados a partir dos templates
+11:11:45 22 cabos ligados
+11:11:49 todos os nós ligados; aguardando boot
+11:12:10 PROVEDOR: PROVEDOR_OK
+11:12:39 R-HQ: configurado e salvo
+11:13:03 R-FIL1: configurado e salvo
+11:13:27 R-FIL2: configurado e salvo
+11:13:47 SW-CORE: configurado e salvo
+11:14:06 SW-ACC1: configurado e salvo
+11:14:26 SW-ACC2: configurado e salvo
+11:14:45 SW-FIL1: configurado e salvo
+11:15:05 SW-FIL2: configurado e salvo
+11:16:03 FW-HQ: LAN 10.10.10.1/24, WAN 10.255.1.2/30 (gw 10.255.1.1), gerência 192.168.16.31; sem NAT; WAN libera tudo; backup salvo (NAT desligado)
+11:17:00 FW-F1: LAN 10.20.10.1/24, WAN 10.255.2.2/30 (gw 10.255.2.1), gerência 192.168.16.32; sem NAT; WAN libera tudo; backup salvo (NAT desligado)
+11:17:58 FW-F2: LAN 10.30.10.1/24, WAN 10.255.3.2/30 (gw 10.255.3.1), gerência 192.168.16.33; sem NAT; WAN libera tudo; backup salvo (NAT desligado)
+11:17:58 teste funcional (rede plana: todos alcançam todos)
+11:17:59 PC-USUARIO     -> HOST-INVADIDO  perda   0%  RTT médio 1.763 ms
+11:18:00 PC-USUARIO     -> APLICACAO      perda   0%  RTT médio 2.928 ms
+11:18:00 PC-USUARIO     -> ARQUIVOS       perda   0%  RTT médio 1.943 ms
+11:18:01 PC-USUARIO     -> PC-FIL1        perda   0%  RTT médio 25.960 ms
+11:18:02 PC-USUARIO     -> PC-FIL2        perda   0%  RTT médio 69.025 ms
+11:18:02 HOST-INVADIDO  -> PC-USUARIO     perda   0%  RTT médio 1.545 ms
+11:18:03 HOST-INVADIDO  -> APLICACAO      perda   0%  RTT médio 2.902 ms
+11:18:04 HOST-INVADIDO  -> ARQUIVOS       perda   0%  RTT médio 3.544 ms
+11:18:05 HOST-INVADIDO  -> PC-FIL1        perda   0%  RTT médio 30.613 ms
+11:18:05 HOST-INVADIDO  -> PC-FIL2        perda   0%  RTT médio 70.785 ms
+11:18:06 PC-FIL1        -> PC-USUARIO     perda   0%  RTT médio 28.257 ms
+11:18:07 PC-FIL1        -> HOST-INVADIDO  perda   0%  RTT médio 28.751 ms
+11:18:08 PC-FIL1        -> APLICACAO      perda   0%  RTT médio 30.507 ms
+11:18:08 PC-FIL1        -> ARQUIVOS       perda   0%  RTT médio 30.046 ms
+11:18:09 PC-FIL1        -> PC-FIL2        perda   0%  RTT médio 89.063 ms
+11:18:10 PC-FIL2        -> PC-USUARIO     perda   0%  RTT médio 70.528 ms
+11:18:11 PC-FIL2        -> HOST-INVADIDO  perda   0%  RTT médio 67.104 ms
+11:18:11 PC-FIL2        -> APLICACAO      perda   0%  RTT médio 70.682 ms
+11:18:12 PC-FIL2        -> ARQUIVOS       perda   0%  RTT médio 68.560 ms
+11:18:13 PC-FIL2        -> PC-FIL1        perda   0%  RTT médio 92.250 ms
+11:18:13 etapa 0 montada; configurações em lab/etapa-0/

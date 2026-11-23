@@ -16,8 +16,9 @@ implantada em quatro etapas na mesma topologia:
 | B1 | Zero Trust | Servidores em enclave atrás do firewall da matriz; bloqueio padrão; portal cativo com RADIUS; ACLs; DAI e port security; gerência por SSH com AAA |
 | B2 | Zero Trust com criptografia | B1 mais túneis IPsec (IKEv2) em estrela entre os firewalls |
 
-Este repositório tem **os scripts** que montaram as etapas, executaram os ensaios e analisaram os resultados, e
-**os dados** obtidos. Não inclui os projetos do GNS3 nem as imagens dos equipamentos.
+Este repositório tem **os scripts** que montaram as etapas, executaram os ensaios e analisaram os resultados,
+**os dados** obtidos e **os projetos do GNS3** de cada etapa: a topologia e as configurações dos equipamentos aqui,
+e os projetos portáteis completos como anexos da release. Não inclui as imagens dos equipamentos.
 
 ## Estrutura
 
@@ -26,7 +27,12 @@ scripts/            scripts Python (a mesma versão que gerou os dados)
 dados/ensaios/      desempenho: uma pasta por bateria, com os dados brutos de cada repetição
 dados/seguranca/    segurança: varreduras do Nmap e vulnerabilidades, por etapa
 dados/analise/      estatística: resumo de cada bateria, comparações entre etapas e conferência com o SciPy
+gns3/etapa-*/       topologia do GNS3 (.gns3) e configuração de cada equipamento ao fim da montagem
+imagens/            Dockerfiles dos contêineres do laboratório (host, servidor e provedor)
 ```
+
+Anexos da release (fora do Git, pelo tamanho): `TCC-etapa-0.gns3project`, `TCC-etapa-A.gns3project`,
+`TCC-etapa-B1.gns3project` e `TCC-etapa-B2.gns3project`, projetos portáteis do GNS3 exportados sem as imagens.
 
 ## Reproduzir a análise estatística
 
@@ -115,34 +121,49 @@ Por etapa, a partir de dois hosts considerados comprometidos (`HOST-INVADIDO`, n
 
 ## Reproduzir o laboratório
 
-Os scripts falam com o controlador do GNS3 (2.2.61) e com a GNS3 VM (endereço na variável `GNS3_VM_HOST`; padrão
-`192.168.16.130`). Eles criam os equipamentos a partir de templates do GNS3 que **não estão neste repositório**:
+O laboratório usa o GNS3 2.2.61 com a GNS3 VM. Os equipamentos vêm destas imagens:
 
-| Template | Uso |
-|---|---|
-| `TCC - IOL L3 15.4` | roteadores (Cisco IOL; imagem proprietária, não distribuída) |
-| `TCC - IOL L2 17.15` | switches (Cisco IOL L2; imagem proprietária, não distribuída) |
-| `TCC - OPNsense 26.7` | firewalls |
-| `TCC - Host` | computadores (contêiner Docker com fping, iperf3 e Nmap) |
-| `TCC - Servidor` | servidores de aplicação e de arquivos (contêiner com OpenSSH, lighttpd e Samba) |
-| `TCC - Provedor` | provedor da WAN, com atraso e limite de banda emulados |
+| Template do GNS3 | Uso | Imagem |
+|---|---|---|
+| `TCC - IOL L3 15.4` | roteadores | `x86_64_crb_linux-adventerprisek9-ms.iol` (Cisco; proprietária, não distribuída) |
+| `TCC - IOL L2 17.15` | switches | `x86_64_crb_linux_l2-adventerprisek9-ms.iol` (Cisco; proprietária, não distribuída) |
+| `TCC - OPNsense 26.7` | firewalls | `OPNsense-26.7-nano-amd64.img` (disponível no site do OPNsense) |
+| `TCC - Host` | computadores | `tcc-host:2` (`imagens/host`: Alpine com fping, iperf3 e Nmap) |
+| `TCC - Servidor` | servidores de aplicação e de arquivos | `tcc-servidor:1` (`imagens/servidor`: OpenSSH, lighttpd e Samba) |
+| `TCC - Provedor` | provedor da WAN, com atraso e limite de banda emulados | `tcc-provedor:1` (`imagens/provedor`) |
+| `TCC - Navegador` | PCs com navegador, só no projeto da B2 | `gns3/webterm:latest` (Docker Hub) |
 
-Ordem de execução:
+As imagens dos contêineres são geradas na GNS3 VM com `docker build -t tcc-host:2 imagens/host` (e, do mesmo modo,
+`tcc-provedor:1` e `tcc-servidor:1`, este depois do `tcc-host:2`).
+
+### Opção 1: abrir os projetos prontos
+
+Com as imagens instaladas, importe no GNS3 (*File → Import portable project*) o `.gns3project` da etapa, anexado à
+release. Cada projeto traz os discos dos equipamentos já configurados. No projeto da B2, os três PCs com navegador
+(`PC-NAV-*`) ficaram desligados durante as medições.
+
+### Opção 2: montar com os scripts
+
+Os scripts falam com o controlador do GNS3 e com a GNS3 VM (endereço na variável `GNS3_VM_HOST`; padrão
+`192.168.16.130`) e criam os equipamentos a partir dos templates acima. Ordem de execução:
 
 1. `montar_etapa0.py`, `servidores_etapa0.py` e `gerencia_telnet_etapa0.py`: etapa 0 (`TCC-etapa-0`).
-2. Duplicar o projeto no GNS3 e rodar `montar_etapaA.py` (A), depois `montar_etapaB1.py` (B1) e `montar_etapaB2.py`
-   (B2), cada um sobre a cópia da etapa anterior.
-3. Em cada etapa: `ensaio.py --projeto TCC-etapa-X --etapa X --reps 30` (desempenho),
+2. Duplicar o projeto no GNS3 e rodar `montar_etapaA.py` (A), depois `montar_etapaB1.py` (B1), cada um sobre a
+   cópia da etapa anterior.
+3. B2: `navegadores_b1.py` faz a cópia da B1 com os PCs de navegador (`TCC-etapa-B1-navegador`), que foi duplicada
+   para a B2, e `montar_etapaB2.py` configura o IPsec.
+4. Em cada etapa: `ensaio.py --projeto TCC-etapa-X --etapa X --reps 30` (desempenho),
    `seguranca.py --projeto TCC-etapa-X --etapa X` (segurança) e, nas etapas B, `medir_portal.py` (autenticação).
-4. `analisar.py` e `conferir_scipy.py` (estatística).
+5. `analisar.py` e `conferir_scipy.py` (estatística).
 
 `gns3lab.py` reúne as funções comuns; `rotulos_etapas.py` e `rotulos_ip.py` só escrevem anotações no desenho do
-GNS3, para as figuras.
+GNS3, para as figuras. Em `gns3/etapa-*/configuracoes` estão a configuração final de cada equipamento (`.cfg` dos
+Cisco, `config.xml` dos OPNsense, `provedor.sh`), o registro da montagem e o teste funcional da etapa.
 
-**Senhas:** os scripts trazem as senhas do laboratório (equipamentos, portal, RADIUS). Elas valem apenas dentro da
-rede emulada e isolada do GNS3 e foram mantidas para que os scripts sejam os mesmos que geraram os dados. As chaves
-da API dos OPNsense e as chaves pré-compartilhadas do IPsec são geradas pelos próprios scripts em cada montagem e
-não estão no repositório.
+**Senhas e chaves:** os scripts, as configurações e os projetos trazem as senhas e as chaves do laboratório
+(equipamentos, portal, RADIUS, chaves da API dos OPNsense, chaves pré-compartilhadas do IPsec e certificados). Elas
+valem apenas dentro da rede emulada e isolada do GNS3 e foram mantidas para que os arquivos sejam os mesmos que
+geraram os dados.
 
 ## Alterações em relação aos arquivos originais
 
@@ -153,7 +174,7 @@ não estão no repositório.
 
 ## Licença
 
-Código (`scripts/`): licença MIT (arquivo `LICENSE`). Dados (`dados/`):
+Código e configurações (`scripts/`, `gns3/`, `imagens/`): licença MIT (arquivo `LICENSE`). Dados (`dados/`):
 [Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.pt-br).
 
 ## Como citar

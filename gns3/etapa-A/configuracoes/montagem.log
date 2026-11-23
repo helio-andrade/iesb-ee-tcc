@@ -1,0 +1,40 @@
+21:31:34 FW-HQ: gateway SWCORE_GW 10.10.100.2 e rota 10.10.0.0/16
+21:31:35 FW-HQ: 1 regra(s) antiga(s) removida(s); WAN só 10.0.0.0/8 -> 10.10.0.0/16
+21:31:36 FW-F1: 1 regra(s) antiga(s) removida(s); WAN só 10.0.0.0/8 -> 10.20.0.0/16
+21:31:38 FW-F2: 1 regra(s) antiga(s) removida(s); WAN só 10.0.0.0/8 -> 10.30.0.0/16
+21:32:37 SW-CORE: VLANs e gerência na VLAN 99 configuradas e salvas
+21:33:15 SW-ACC1: VLANs e gerência na VLAN 99 configuradas e salvas
+21:33:53 SW-ACC2: VLANs e gerência na VLAN 99 configuradas e salvas
+21:34:01 APLICACAO: 10.10.20.21/24, gateway 10.10.20.1
+21:34:10 ARQUIVOS: 10.10.20.22/24, gateway 10.10.20.1
+21:34:10 reserva DHCP: PC-USUARIO 02:42:bc:fc:ff:00 -> 10.10.10.11
+21:34:10 reserva DHCP: HOST-INVADIDO 02:42:38:66:10:00 -> 10.10.10.12
+21:34:48 PC-USUARIO: DHCP -> ['10.10.10.11/24', '10.10.10.1'] OK
+21:34:48 HOST-INVADIDO: DHCP -> ['10.10.10.12/24', '10.10.10.1'] OK
+21:36:24 backups em lab/etapa-A/
+21:36:24 PC-USUARIO     -> HOST-INVADIDO  perda   0%  RTT médio 0.801 ms
+21:36:25 PC-USUARIO     -> APLICACAO      perda 3333%  RTT médio 2.152 ms
+21:36:26 PC-USUARIO     -> ARQUIVOS       perda 3333%  RTT médio 2.800 ms
+21:36:27 PC-USUARIO     -> PC-FIL1        perda   0%  RTT médio 26.261 ms
+21:36:28 PC-USUARIO     -> PC-FIL2        perda   0%  RTT médio 66.581 ms
+21:36:29 HOST-INVADIDO  -> PC-USUARIO     perda   0%  RTT médio 0.913 ms
+21:36:29 HOST-INVADIDO  -> APLICACAO      perda   0%  RTT médio 1.751 ms
+21:36:30 HOST-INVADIDO  -> ARQUIVOS       perda   0%  RTT médio 1.788 ms
+21:36:31 HOST-INVADIDO  -> PC-FIL1        perda   0%  RTT médio 25.591 ms
+21:36:31 HOST-INVADIDO  -> PC-FIL2        perda   0%  RTT médio 65.924 ms
+21:36:32 APLICACAO      -> PC-USUARIO     perda   0%  RTT médio 1.303 ms
+21:36:33 APLICACAO      -> HOST-INVADIDO  perda   0%  RTT médio 1.686 ms
+21:36:33 APLICACAO      -> ARQUIVOS       perda   0%  RTT médio 1.149 ms
+21:36:34 APLICACAO      -> PC-FIL1        perda   0%  RTT médio 26.168 ms
+21:36:35 APLICACAO      -> PC-FIL2        perda   0%  RTT médio 65.504 ms
+21:36:36 PC-FIL1        -> PC-USUARIO     perda   0%  RTT médio 31.236 ms
+21:36:36 PC-FIL1        -> HOST-INVADIDO  perda   0%  RTT médio 24.404 ms
+21:36:37 PC-FIL1        -> APLICACAO      perda   0%  RTT médio 24.917 ms
+21:36:38 PC-FIL1        -> ARQUIVOS       perda   0%  RTT médio 25.465 ms
+21:36:39 PC-FIL1        -> PC-FIL2        perda   0%  RTT médio 85.853 ms
+21:36:39 PC-FIL2        -> PC-USUARIO     perda   0%  RTT médio 68.942 ms
+21:36:40 PC-FIL2        -> HOST-INVADIDO  perda   0%  RTT médio 66.626 ms
+21:36:41 PC-FIL2        -> APLICACAO      perda   0%  RTT médio 66.502 ms
+21:36:42 PC-FIL2        -> ARQUIVOS       perda   0%  RTT médio 65.456 ms
+21:36:42 PC-FIL2        -> PC-FIL1        perda   0%  RTT médio 88.107 ms
+21:36:42 etapa A montada
