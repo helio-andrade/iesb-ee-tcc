@@ -1,0 +1,34 @@
+20:13:36 HOST-INVADIDO: alcance de rede 23/25 em 2 s
+20:19:13 HOST-INVADIDO: 38 serviços abertos em 337 s
+20:19:15 PC-FIL1: alcance de rede 23/25 em 2 s
+20:25:17 PC-FIL1: 38 serviços abertos em 362 s
+# Segurança — etapa 0 (TCC-etapa-0)
+
+## Origem: HOST-INVADIDO
+
+- Endereços alcançáveis: **23/25** (16 equipamentos)
+- Endereços com serviço aberto: **20**; serviços abertos: **38** {'servidor': 6, 'estacao': 0, 'firewall': 21, 'roteador': 6, 'switch': 5}
+- Serviços de gerência expostos em equipamentos de rede: **25**
+- Servidores alcançáveis com serviço: APLICACAO, ARQUIVOS
+- Vulnerabilidades expostas (serviço × CVE): **329** {'alta': 78, 'media': 152, 'baixa': 76, 'critica': 23}; CVEs únicas: 72
+- Serviços sem versão completa identificada (fora da contagem de CVEs): 27
+
+## Origem: PC-FIL1
+
+- Endereços alcançáveis: **23/25** (16 equipamentos)
+- Endereços com serviço aberto: **20**; serviços abertos: **38** {'servidor': 6, 'estacao': 0, 'firewall': 21, 'roteador': 6, 'switch': 5}
+- Serviços de gerência expostos em equipamentos de rede: **25**
+- Servidores alcançáveis com serviço: APLICACAO, ARQUIVOS
+- Vulnerabilidades expostas (serviço × CVE): **329** {'alta': 78, 'media': 152, 'baixa': 76, 'critica': 23}; CVEs únicas: 72
+- Serviços sem versão completa identificada (fora da contagem de CVEs): 27
+
+## Produtos encontrados e CVEs conhecidas
+
+| CPE | CVEs | críticas | altas | médias | baixas |
+|---|---|---|---|---|---|
+| cpe:/a:cisco:telnet | sem versão completa | 0 | 0 | 0 | 0 |
+| cpe:/a:lighttpd:lighttpd:1.4.85 | 0 | 0 | 0 | 0 | 0 |
+| cpe:/a:nlnetlabs:unbound:1.25.1 | 37 | 3 | 8 | 18 | 8 |
+| cpe:/a:openbsd:openssh:9.7 | 35 | 1 | 11 | 13 | 10 |
+| cpe:/a:samba:samba:4 | sem versão completa | 0 | 0 | 0 | 0 |
+| cpe:/o:cisco:ios | sem versão completa | 0 | 0 | 0 | 0 |

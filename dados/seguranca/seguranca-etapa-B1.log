@@ -1,0 +1,45 @@
+01:36:39 HOST-INVADIDO: alcance de rede 25/28 em 2 s
+01:39:13 HOST-INVADIDO: 38 serviços abertos em 153 s
+01:39:19 PC-FIL1: alcance de rede 2/28 em 7 s
+01:59:29 PC-FIL1: 0 serviços abertos em 1210 s
+# Segurança — etapa B1 (TCC-etapa-B1)
+
+## Origem: HOST-INVADIDO
+
+**Por equipamento (métrica principal):**
+
+- Equipamentos alcançáveis: **14/16**; com serviço aberto: **12**
+- Serviços expostos: **16** (de gerência em equipamentos de rede: **9**)
+- Vulnerabilidades expostas (equipamento × CVE): **37** {'media': 18, 'alta': 8, 'baixa': 8, 'critica': 3}
+
+**Por endereço (caminhos de exposição):**
+
+- Endereços alcançáveis: **25/28** (14 equipamentos)
+- Endereços com serviço aberto: **22**; serviços abertos: **38** {'servidor': 2, 'estacao': 2, 'firewall': 26, 'roteador': 6, 'switch': 2}
+- Serviços de gerência expostos em equipamentos de rede: **22**
+- Servidores alcançáveis com serviço: APLICACAO, ARQUIVOS
+- Vulnerabilidades expostas (serviço × CVE): **148** {'media': 72, 'alta': 32, 'baixa': 32, 'critica': 12}; CVEs únicas: 37
+- Serviços sem versão completa identificada (fora da contagem de CVEs): 34
+
+## Origem: PC-FIL1
+
+**Por equipamento (métrica principal):**
+
+- Equipamentos alcançáveis: **2/16**; com serviço aberto: **0**
+- Serviços expostos: **0** (de gerência em equipamentos de rede: **0**)
+- Vulnerabilidades expostas (equipamento × CVE): **0** {}
+
+**Por endereço (caminhos de exposição):**
+
+- Endereços alcançáveis: **2/28** (2 equipamentos)
+- Endereços com serviço aberto: **0**; serviços abertos: **0** {'servidor': 0, 'estacao': 0, 'firewall': 0, 'roteador': 0, 'switch': 0}
+- Serviços de gerência expostos em equipamentos de rede: **0**
+- Servidores alcançáveis com serviço: nenhum
+- Vulnerabilidades expostas (serviço × CVE): **0** {}; CVEs únicas: 0
+- Serviços sem versão completa identificada (fora da contagem de CVEs): 0
+
+## Produtos encontrados e CVEs conhecidas
+
+| CPE | CVEs | críticas | altas | médias | baixas |
+|---|---|---|---|---|---|
+| cpe:/a:nlnetlabs:unbound:1.25.1 | 37 | 3 | 8 | 18 | 8 |

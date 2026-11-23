@@ -1,0 +1,36 @@
+ 1: sem sessão 302 | senha errada 1090.4 ms | login  122.6 ms (sim) | 1º acesso 200 em   4.6 ms
+ 2: sem sessão 302 | senha errada 1059.5 ms | login  160.2 ms (sim) | 1º acesso 200 em   3.5 ms
+ 3: sem sessão 302 | senha errada 1031.4 ms | login  117.6 ms (sim) | 1º acesso 200 em   3.5 ms
+ 4: sem sessão 302 | senha errada 1008.5 ms | login  115.8 ms (sim) | 1º acesso 200 em   3.2 ms
+ 5: sem sessão 302 | senha errada 1012.3 ms | login  115.5 ms (sim) | 1º acesso 200 em   3.4 ms
+ 6: sem sessão 302 | senha errada 1011.8 ms | login  116.8 ms (sim) | 1º acesso 200 em   4.5 ms
+ 7: sem sessão 302 | senha errada 1012.6 ms | login  115.3 ms (sim) | 1º acesso 200 em   3.4 ms
+ 8: sem sessão 302 | senha errada 1011.2 ms | login  117.6 ms (sim) | 1º acesso 200 em   3.9 ms
+ 9: sem sessão 302 | senha errada 1014.4 ms | login  115.6 ms (sim) | 1º acesso 200 em   3.5 ms
+10: sem sessão 302 | senha errada 1015.3 ms | login  108.8 ms (sim) | 1º acesso 200 em   4.1 ms
+11: sem sessão 302 | senha errada 1014.8 ms | login  109.9 ms (sim) | 1º acesso 200 em   3.9 ms
+12: sem sessão 302 | senha errada 1010.6 ms | login  116.9 ms (sim) | 1º acesso 200 em   3.7 ms
+13: sem sessão 302 | senha errada 1043.6 ms | login  116.2 ms (sim) | 1º acesso 200 em   3.3 ms
+14: sem sessão 302 | senha errada 1012.3 ms | login  115.1 ms (sim) | 1º acesso 200 em   3.5 ms
+15: sem sessão 302 | senha errada 1011.3 ms | login  109.2 ms (sim) | 1º acesso 200 em   3.6 ms
+16: sem sessão 302 | senha errada 1014.3 ms | login  110.0 ms (sim) | 1º acesso 200 em   3.8 ms
+17: sem sessão 302 | senha errada 1011.9 ms | login  119.6 ms (sim) | 1º acesso 200 em   3.4 ms
+18: sem sessão 302 | senha errada 1010.1 ms | login  117.3 ms (sim) | 1º acesso 200 em   3.4 ms
+19: sem sessão 302 | senha errada 1011.3 ms | login  138.1 ms (sim) | 1º acesso 200 em   3.3 ms
+20: sem sessão 302 | senha errada 1011.5 ms | login  125.8 ms (sim) | 1º acesso 200 em   4.4 ms
+21: sem sessão 302 | senha errada 1022.3 ms | login  238.0 ms (sim) | 1º acesso 200 em   4.2 ms
+22: sem sessão 302 | senha errada 1021.0 ms | login  125.4 ms (sim) | 1º acesso 200 em   3.7 ms
+23: sem sessão 302 | senha errada 1031.1 ms | login  120.6 ms (sim) | 1º acesso 200 em   4.4 ms
+24: sem sessão 302 | senha errada 1014.2 ms | login  123.5 ms (sim) | 1º acesso 200 em   3.7 ms
+25: sem sessão 302 | senha errada 1044.2 ms | login  115.8 ms (sim) | 1º acesso 200 em   3.5 ms
+26: sem sessão 302 | senha errada 1017.1 ms | login  110.0 ms (sim) | 1º acesso 200 em   3.7 ms
+27: sem sessão 302 | senha errada 1013.2 ms | login  118.3 ms (sim) | 1º acesso 200 em   3.6 ms
+28: sem sessão 302 | senha errada 1013.8 ms | login  118.0 ms (sim) | 1º acesso 200 em   3.3 ms
+29: sem sessão 302 | senha errada 1010.1 ms | login  122.0 ms (sim) | 1º acesso 200 em   3.4 ms
+30: sem sessão 302 | senha errada 1015.4 ms | login  115.7 ms (sim) | 1º acesso 200 em   3.6 ms
+
+login correto: média 123.0 ms, mediana 117.1, dp 23.8, min 108.8, máx 238.0
+senha errada : média 1020.7 ms, mediana 1014.0, dp 17.8, min 1008.5, máx 1090.4
+1º acesso    : média 3.7 ms, mediana 3.6, dp 0.4, min 3.2, máx 4.6
+bloqueado sem sessão: 30 / 30 | recusas corretas: 30 | logins ok: 30 | 1º acesso 200: 30
+-> dados\ensaios\etapa-B2\portal.csv

@@ -1,0 +1,77 @@
+{
+ "etapa": "B2",
+ "projeto": "TCC-etapa-B2",
+ "origens": {
+  "HOST-INVADIDO": {
+   "equipamentos_no_inventario": 16,
+   "servicos_por_equipamento": 2,
+   "servicos_de_gerencia_por_equipamento": 0,
+   "vulnerabilidades_por_equipamento_total": 37,
+   "vulnerabilidades_por_equipamento_por_severidade": {
+    "media": 18,
+    "alta": 8,
+    "baixa": 8,
+    "critica": 3
+   },
+   "destinos_no_inventario": 28,
+   "enderecos_alcancaveis": 7,
+   "equipamentos_alcancaveis": [
+    "FW-HQ",
+    "PC-USUARIO",
+    "SW-CORE"
+   ],
+   "enderecos_com_servico": 4,
+   "equipamentos_com_servico": [
+    "FW-HQ"
+   ],
+   "servicos_abertos": 5,
+   "servicos_por_classe": {
+    "servidor": 0,
+    "estacao": 0,
+    "firewall": 5,
+    "roteador": 0,
+    "switch": 0
+   },
+   "servicos_de_gerencia_em_equipamentos_de_rede": 0,
+   "servidores_alcancaveis_com_servico": [],
+   "vulnerabilidades_expostas_por_severidade": {
+    "media": 72,
+    "alta": 32,
+    "baixa": 32,
+    "critica": 12
+   },
+   "vulnerabilidades_expostas_total": 148,
+   "cves_unicas_expostas": 37,
+   "servicos_sem_versao_completa": 1
+  },
+  "PC-FIL1": {
+   "equipamentos_no_inventario": 16,
+   "servicos_por_equipamento": 0,
+   "servicos_de_gerencia_por_equipamento": 0,
+   "vulnerabilidades_por_equipamento_total": 0,
+   "vulnerabilidades_por_equipamento_por_severidade": {},
+   "destinos_no_inventario": 28,
+   "enderecos_alcancaveis": 2,
+   "equipamentos_alcancaveis": [
+    "PC-FIL2",
+    "SW-FIL1"
+   ],
+   "enderecos_com_servico": 0,
+   "equipamentos_com_servico": [],
+   "servicos_abertos": 0,
+   "servicos_por_classe": {
+    "servidor": 0,
+    "estacao": 0,
+    "firewall": 0,
+    "roteador": 0,
+    "switch": 0
+   },
+   "servicos_de_gerencia_em_equipamentos_de_rede": 0,
+   "servidores_alcancaveis_com_servico": [],
+   "vulnerabilidades_expostas_por_severidade": {},
+   "vulnerabilidades_expostas_total": 0,
+   "cves_unicas_expostas": 0,
+   "servicos_sem_versao_completa": 0
+  }
+ }
+}

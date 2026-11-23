@@ -1,0 +1,146 @@
+{
+ "etapa": "0",
+ "projeto": "TCC-etapa-0",
+ "origens": {
+  "HOST-INVADIDO": {
+   "equipamentos_no_inventario": 16,
+   "servicos_por_equipamento": 23,
+   "servicos_de_gerencia_por_equipamento": 14,
+   "vulnerabilidades_por_equipamento_total": 181,
+   "vulnerabilidades_por_equipamento_por_severidade": {
+    "alta": 46,
+    "media": 80,
+    "baixa": 44,
+    "critica": 11
+   },
+   "destinos_no_inventario": 25,
+   "enderecos_alcancaveis": 23,
+   "equipamentos_alcancaveis": [
+    "APLICACAO",
+    "ARQUIVOS",
+    "FW-F1",
+    "FW-F2",
+    "FW-HQ",
+    "PC-FIL1",
+    "PC-FIL2",
+    "PC-USUARIO",
+    "R-FIL1",
+    "R-FIL2",
+    "R-HQ",
+    "SW-ACC1",
+    "SW-ACC2",
+    "SW-CORE",
+    "SW-FIL1",
+    "SW-FIL2"
+   ],
+   "enderecos_com_servico": 20,
+   "equipamentos_com_servico": [
+    "APLICACAO",
+    "ARQUIVOS",
+    "FW-F1",
+    "FW-F2",
+    "FW-HQ",
+    "R-FIL1",
+    "R-FIL2",
+    "R-HQ",
+    "SW-ACC1",
+    "SW-ACC2",
+    "SW-CORE",
+    "SW-FIL1",
+    "SW-FIL2"
+   ],
+   "servicos_abertos": 38,
+   "servicos_por_classe": {
+    "servidor": 6,
+    "estacao": 0,
+    "firewall": 21,
+    "roteador": 6,
+    "switch": 5
+   },
+   "servicos_de_gerencia_em_equipamentos_de_rede": 25,
+   "servidores_alcancaveis_com_servico": [
+    "APLICACAO",
+    "ARQUIVOS"
+   ],
+   "vulnerabilidades_expostas_por_severidade": {
+    "alta": 78,
+    "media": 152,
+    "baixa": 76,
+    "critica": 23
+   },
+   "vulnerabilidades_expostas_total": 329,
+   "cves_unicas_expostas": 72,
+   "servicos_sem_versao_completa": 27
+  },
+  "PC-FIL1": {
+   "equipamentos_no_inventario": 16,
+   "servicos_por_equipamento": 23,
+   "servicos_de_gerencia_por_equipamento": 14,
+   "vulnerabilidades_por_equipamento_total": 181,
+   "vulnerabilidades_por_equipamento_por_severidade": {
+    "alta": 46,
+    "media": 80,
+    "baixa": 44,
+    "critica": 11
+   },
+   "destinos_no_inventario": 25,
+   "enderecos_alcancaveis": 23,
+   "equipamentos_alcancaveis": [
+    "APLICACAO",
+    "ARQUIVOS",
+    "FW-F1",
+    "FW-F2",
+    "FW-HQ",
+    "HOST-INVADIDO",
+    "PC-FIL2",
+    "PC-USUARIO",
+    "R-FIL1",
+    "R-FIL2",
+    "R-HQ",
+    "SW-ACC1",
+    "SW-ACC2",
+    "SW-CORE",
+    "SW-FIL1",
+    "SW-FIL2"
+   ],
+   "enderecos_com_servico": 20,
+   "equipamentos_com_servico": [
+    "APLICACAO",
+    "ARQUIVOS",
+    "FW-F1",
+    "FW-F2",
+    "FW-HQ",
+    "R-FIL1",
+    "R-FIL2",
+    "R-HQ",
+    "SW-ACC1",
+    "SW-ACC2",
+    "SW-CORE",
+    "SW-FIL1",
+    "SW-FIL2"
+   ],
+   "servicos_abertos": 38,
+   "servicos_por_classe": {
+    "servidor": 6,
+    "estacao": 0,
+    "firewall": 21,
+    "roteador": 6,
+    "switch": 5
+   },
+   "servicos_de_gerencia_em_equipamentos_de_rede": 25,
+   "servidores_alcancaveis_com_servico": [
+    "APLICACAO",
+    "ARQUIVOS"
+   ],
+   "vulnerabilidades_expostas_por_severidade": {
+    "alta": 78,
+    "media": 152,
+    "baixa": 76,
+    "critica": 23
+   },
+   "vulnerabilidades_expostas_total": 329,
+   "cves_unicas_expostas": 72,
+   "servicos_sem_versao_completa": 27
+  }
+ }
+}

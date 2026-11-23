@@ -1,0 +1,7 @@
+# Bibliotecas Python do laboratório (Python 3.14, Windows). Instalar com:
+#   python -m pip install -r lab/scripts/requirements.txt
+paramiko==4.0.0      # SSH na GNS3 VM (gns3lab.vm, coletor de CPU, contêineres)
+numpy==2.5.3         # base do scipy/pandas/matplotlib
+scipy==1.18.1        # conferência estatística independente do analisar.py (conferir_scipy.py: Welch, Holm, IC 95%)
+pandas==3.1.1        # instalado na fase 6 para os CSV de ensaio; os scripts atuais não o usam
+matplotlib==3.11.2   # gráficos do artigo (fase 6)

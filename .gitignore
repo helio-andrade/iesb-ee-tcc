@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# gerados pelos scripts de montagem (chaves do laboratório)
+dados/opnsense_api_keys.json
+dados/ipsec_psk.json

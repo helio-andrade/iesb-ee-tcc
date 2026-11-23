@@ -1,0 +1,69 @@
+etapa,origem,ip,equipamento,classe,porta,protocolo,servico,produto,versao,cpe
+A,HOST-INVADIDO,10.10.10.1,SW-CORE,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.255.1.2,FW-HQ,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,HOST-INVADIDO,10.255.1.2,FW-HQ,firewall,80,tcp,http,OPNsense,,
+A,HOST-INVADIDO,10.255.1.2,FW-HQ,firewall,443,tcp,https,OPNsense,,
+A,HOST-INVADIDO,192.168.16.31,FW-HQ,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,HOST-INVADIDO,192.168.16.31,FW-HQ,firewall,80,tcp,http,OPNsense,,
+A,HOST-INVADIDO,192.168.16.31,FW-HQ,firewall,443,tcp,https,OPNsense,,
+A,HOST-INVADIDO,10.20.10.1,FW-F1,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,HOST-INVADIDO,10.20.10.1,FW-F1,firewall,80,tcp,http,OPNsense,,
+A,HOST-INVADIDO,10.20.10.1,FW-F1,firewall,443,tcp,https,OPNsense,,
+A,HOST-INVADIDO,10.30.10.1,FW-F2,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,HOST-INVADIDO,10.30.10.1,FW-F2,firewall,80,tcp,http,OPNsense,,
+A,HOST-INVADIDO,10.30.10.1,FW-F2,firewall,443,tcp,https,OPNsense,,
+A,HOST-INVADIDO,10.255.1.1,R-HQ,roteador,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,172.16.0.2,R-HQ,roteador,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.255.2.1,R-FIL1,roteador,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,172.16.0.6,R-FIL1,roteador,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.255.3.1,R-FIL2,roteador,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,172.16.0.10,R-FIL2,roteador,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.20.10.2,SW-FIL1,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.30.10.2,SW-FIL2,switch,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.10.20.21,APLICACAO,servidor,22,tcp,ssh,OpenSSH,9.7,cpe:/a:openbsd:openssh:9.7
+A,HOST-INVADIDO,10.10.20.21,APLICACAO,servidor,80,tcp,http,lighttpd,1.4.85,cpe:/a:lighttpd:lighttpd:1.4.85
+A,HOST-INVADIDO,10.10.20.21,APLICACAO,servidor,443,tcp,http,lighttpd,1.4.85,cpe:/a:lighttpd:lighttpd:1.4.85
+A,HOST-INVADIDO,10.10.20.22,ARQUIVOS,servidor,22,tcp,ssh,OpenSSH,9.7,cpe:/a:openbsd:openssh:9.7
+A,HOST-INVADIDO,10.10.20.22,ARQUIVOS,servidor,139,tcp,netbios-ssn,Samba smbd,4,cpe:/a:samba:samba:4
+A,HOST-INVADIDO,10.10.20.22,ARQUIVOS,servidor,445,tcp,netbios-ssn,Samba smbd,4,cpe:/a:samba:samba:4
+A,HOST-INVADIDO,10.10.100.1,FW-HQ,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,HOST-INVADIDO,10.10.100.1,FW-HQ,firewall,80,tcp,http,OPNsense,,
+A,HOST-INVADIDO,10.10.100.1,FW-HQ,firewall,443,tcp,https,OPNsense,,
+A,HOST-INVADIDO,10.10.20.1,SW-CORE,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.10.99.1,SW-CORE,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.10.100.2,SW-CORE,switch,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.10.99.3,SW-ACC1,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,HOST-INVADIDO,10.10.99.4,SW-ACC2,switch,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.255.2.2,FW-F1,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,PC-FIL1,10.255.2.2,FW-F1,firewall,80,tcp,http,OPNsense,,
+A,PC-FIL1,10.255.2.2,FW-F1,firewall,443,tcp,https,OPNsense,,
+A,PC-FIL1,192.168.16.32,FW-F1,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,PC-FIL1,192.168.16.32,FW-F1,firewall,80,tcp,http,OPNsense,,
+A,PC-FIL1,192.168.16.32,FW-F1,firewall,443,tcp,https,OPNsense,,
+A,PC-FIL1,10.30.10.1,FW-F2,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,PC-FIL1,10.30.10.1,FW-F2,firewall,80,tcp,http,OPNsense,,
+A,PC-FIL1,10.30.10.1,FW-F2,firewall,443,tcp,https,OPNsense,,
+A,PC-FIL1,10.255.1.1,R-HQ,roteador,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,172.16.0.2,R-HQ,roteador,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.255.2.1,R-FIL1,roteador,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,172.16.0.6,R-FIL1,roteador,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.255.3.1,R-FIL2,roteador,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,172.16.0.10,R-FIL2,roteador,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.30.10.2,SW-FIL2,switch,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.10.20.21,APLICACAO,servidor,22,tcp,ssh,OpenSSH,9.7,cpe:/a:openbsd:openssh:9.7
+A,PC-FIL1,10.10.20.21,APLICACAO,servidor,80,tcp,http,lighttpd,1.4.85,cpe:/a:lighttpd:lighttpd:1.4.85
+A,PC-FIL1,10.10.20.21,APLICACAO,servidor,443,tcp,http,lighttpd,1.4.85,cpe:/a:lighttpd:lighttpd:1.4.85
+A,PC-FIL1,10.10.20.22,ARQUIVOS,servidor,22,tcp,ssh,OpenSSH,9.7,cpe:/a:openbsd:openssh:9.7
+A,PC-FIL1,10.10.20.22,ARQUIVOS,servidor,139,tcp,netbios-ssn,Samba smbd,4,cpe:/a:samba:samba:4
+A,PC-FIL1,10.10.20.22,ARQUIVOS,servidor,445,tcp,netbios-ssn,Samba smbd,4,cpe:/a:samba:samba:4
+A,PC-FIL1,10.10.100.1,FW-HQ,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,PC-FIL1,10.10.100.1,FW-HQ,firewall,80,tcp,http,OPNsense,,
+A,PC-FIL1,10.10.100.1,FW-HQ,firewall,443,tcp,https,OPNsense,,
+A,PC-FIL1,10.10.20.1,SW-CORE,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.10.100.2,SW-CORE,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.10.99.3,SW-ACC1,switch,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.10.99.4,SW-ACC2,switch,23,tcp,telnet,Cisco IOS telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios
+A,PC-FIL1,10.20.10.1,FW-F1,firewall,53,tcp,domain,Unbound,1.25.1,cpe:/a:nlnetlabs:unbound:1.25.1
+A,PC-FIL1,10.20.10.1,FW-F1,firewall,80,tcp,http,OPNsense,,
+A,PC-FIL1,10.20.10.1,FW-F1,firewall,443,tcp,https,OPNsense,,
+A,PC-FIL1,10.20.10.2,SW-FIL1,switch,23,tcp,telnet,Cisco router telnetd,,cpe:/a:cisco:telnet cpe:/o:cisco:ios

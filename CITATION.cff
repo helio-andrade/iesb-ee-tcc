@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Se usar estes scripts ou dados, cite-os como abaixo."
+title: "Zero Trust em rede corporativa: scripts e dados"
+abstract: >-
+  Scripts e dados do TCC "Zero Trust em rede corporativa: ganho de segurança versus impacto no desempenho"
+  (Engenharia Elétrica, Centro Universitário IESB, 2026): montagem de um laboratório emulado no GNS3 em quatro
+  etapas (rede plana, perimetral, Zero Trust e Zero Trust com IPsec), ensaios de desempenho e de segurança e
+  análise estatística (teste de Welch com ajuste de Holm).
+type: software
+authors:
+  - family-names: "Silva Júnior"
+    given-names: "Hélio Andrade da"
+    affiliation: "Centro Universitário IESB"
+version: "1.0"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/helio-andrade/iesb-ee-tcc"
+keywords:
+  - Zero Trust
+  - GNS3
+  - segurança de redes
+  - desempenho de redes
+  - IPsec

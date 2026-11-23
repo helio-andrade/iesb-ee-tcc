@@ -1,0 +1,110 @@
+{
+ "projeto": "TCC-etapa-B2",
+ "etapa": "B2",
+ "repeticoes": 30,
+ "caminhos": {
+  "LAN-matriz": [
+   "PC-USUARIO",
+   "APLICACAO",
+   "10.10.20.21",
+   100
+  ],
+  "matriz-filial1": [
+   "PC-USUARIO",
+   "PC-FIL1",
+   "10.20.10.11",
+   20
+  ],
+  "matriz-filial2": [
+   "PC-USUARIO",
+   "PC-FIL2",
+   "10.30.10.11",
+   10
+  ],
+  "filial1-filial2": [
+   "PC-FIL1",
+   "PC-FIL2",
+   "10.30.10.11",
+   10
+  ]
+ },
+ "tamanhos_bytes": [
+  64,
+  512,
+  1024,
+  1400
+ ],
+ "fracao_udp": 0.9,
+ "equipamentos": [
+  "R-HQ",
+  "R-FIL1",
+  "R-FIL2",
+  "FW-HQ",
+  "FW-F1",
+  "FW-F2",
+  "SW-CORE",
+  "SW-ACC1",
+  "SW-ACC2",
+  "SW-FIL1",
+  "SW-FIL2",
+  "PROVEDOR"
+ ],
+ "mapa_cpu": {
+  "R-HQ": [
+   "pid",
+   "373727"
+  ],
+  "R-FIL1": [
+   "pid",
+   "373786"
+  ],
+  "R-FIL2": [
+   "pid",
+   "373843"
+  ],
+  "FW-HQ": [
+   "pid",
+   "373751"
+  ],
+  "FW-F1": [
+   "pid",
+   "373810"
+  ],
+  "FW-F2": [
+   "pid",
+   "373867"
+  ],
+  "SW-CORE": [
+   "pid",
+   "373905"
+  ],
+  "SW-ACC1": [
+   "pid",
+   "373930"
+  ],
+  "SW-ACC2": [
+   "pid",
+   "373966"
+  ],
+  "SW-FIL1": [
+   "pid",
+   "373990"
+  ],
+  "SW-FIL2": [
+   "pid",
+   "374014"
+  ],
+  "PROVEDOR": [
+   "cg",
+   "0ef4582fdd30f1aa96a29b9ebc083c8f802738e6384125786f08451eff2bd980"
+  ]
+ },
+ "metodo": {
+  "latencia": "fping -C 20 -p 100 -t 1000 -q",
+  "tcp": "iperf3 -t 10 -J",
+  "udp": "iperf3 -u -b <90% cap> -l <tam-28> -t 5 -J",
+  "cpu": "delta (utime+stime) de /proc/<pid>/stat (QEMU, IOL) ou cpuacct.usage do cgroup (contêineres) / delta t, % de 1 núcleo",
+  "ambiente": "GNS3 VM: delta de /proc/stat (CPU ocupada e steal, % de todos os núcleos) e /proc/loadavg; Windows: GetSystemTimes (% de todos os núcleos)"
+ },
+ "aquecimento_reps": 0
+}

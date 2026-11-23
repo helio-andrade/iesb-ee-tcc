@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Fri Nov 13 23:13:35 2026 as: nmap -n -sn -&#45;disable-arp-ping -PE -PS21,22,23,80,139,443,445,3389 -PA80 -&#45;reason -oX /tmp/descoberta.xml 10.10.10.21 10.10.10.22 10.10.10.11 10.20.10.11 10.30.10.11 10.10.10.1 10.255.1.2 192.168.16.31 10.20.10.1 10.255.2.2 192.168.16.32 10.30.10.1 10.255.3.2 192.168.16.33 10.255.1.1 172.16.0.2 10.255.2.1 172.16.0.6 10.255.3.1 172.16.0.10 10.10.10.2 10.10.10.3 10.10.10.4 10.20.10.2 10.30.10.2 -->
+<nmaprun scanner="nmap" args="nmap -n -sn -&#45;disable-arp-ping -PE -PS21,22,23,80,139,443,445,3389 -PA80 -&#45;reason -oX /tmp/descoberta.xml 10.10.10.21 10.10.10.22 10.10.10.11 10.20.10.11 10.30.10.11 10.10.10.1 10.255.1.2 192.168.16.31 10.20.10.1 10.255.2.2 192.168.16.32 10.30.10.1 10.255.3.2 192.168.16.33 10.255.1.1 172.16.0.2 10.255.2.1 172.16.0.6 10.255.3.1 172.16.0.10 10.10.10.2 10.10.10.3 10.10.10.4 10.20.10.2 10.30.10.2" start="1794611615" startstr="Fri Nov 13 23:13:35 2026" version="7.95" xmloutputversion="1.05">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="10.10.10.21" addrtype="ipv4"/>
+<address addr="02:42:4A:13:84:00" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="3797" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="10.10.10.22" addrtype="ipv4"/>
+<address addr="02:42:90:53:40:00" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="3772" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="10.10.10.11" addrtype="ipv4"/>
+<address addr="02:42:BC:FC:FF:00" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="1232" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="10.10.10.1" addrtype="ipv4"/>
+<address addr="0C:85:83:15:00:00" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="4019" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="255"/>
+<address addr="10.10.10.2" addrtype="ipv4"/>
+<address addr="AA:BB:CC:80:04:00" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="3104" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="255"/>
+<address addr="10.10.10.3" addrtype="ipv4"/>
+<address addr="AA:BB:CC:80:05:00" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="1655" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="255"/>
+<address addr="10.10.10.4" addrtype="ipv4"/>
+<address addr="AA:BB:CC:80:06:00" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="3714" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="59"/>
+<address addr="10.20.10.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23610" rttvar="23610" to="118050"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="59"/>
+<address addr="10.30.10.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64918" rttvar="64918" to="324590"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="10.255.1.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="2280" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="192.168.16.31" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="1262" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="60"/>
+<address addr="10.20.10.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="22941" rttvar="22941" to="114705"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="60"/>
+<address addr="10.255.2.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23331" rttvar="23331" to="116655"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="60"/>
+<address addr="10.30.10.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="63236" rttvar="63236" to="316180"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="60"/>
+<address addr="10.255.3.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="63244" rttvar="63244" to="316220"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="254"/>
+<address addr="10.255.1.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="2763" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="254"/>
+<address addr="172.16.0.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="2677" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="252"/>
+<address addr="10.255.2.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="22557" rttvar="22557" to="112785"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="252"/>
+<address addr="172.16.0.6" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="22954" rttvar="22954" to="114770"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="252"/>
+<address addr="10.255.3.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="63144" rttvar="63144" to="315720"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="252"/>
+<address addr="172.16.0.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="62638" rttvar="62638" to="313190"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="250"/>
+<address addr="10.20.10.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23810" rttvar="23810" to="119050"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="250"/>
+<address addr="10.30.10.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64914" rttvar="64914" to="324570"/>
+</host>
+<runstats><finished time="1794611617" timestr="Fri Nov 13 23:13:37 2026" summary="Nmap done at Fri Nov 13 23:13:37 2026; 25 IP addresses (23 hosts up) scanned in 1.49 seconds" elapsed="1.49" exit="success"/><hosts up="23" down="2" total="25"/>
+</runstats>
+</nmaprun>
